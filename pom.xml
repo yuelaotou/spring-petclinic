@@ -3,13 +3,14 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>org.springframework.samples</groupId>
-	<artifactId>org.springframework.samples.petclinic</artifactId>
-	<name>petclinic</name>
+	<artifactId>spring-petclinic</artifactId>
+	<name>spring-petclinic</name>
 	<packaging>war</packaging>
 	<version>1.0.0-SNAPSHOT</version>
 	<properties>
 		<spring.version>3.1.2.RELEASE</spring.version>
 		<slf4j.version>1.6.1</slf4j.version>
+		<java.version>1.6</java.version>
 	</properties>
 	<dependencies>
 
@@ -257,8 +258,8 @@
 				<artifactId>maven-compiler-plugin</artifactId>
 				<configuration>
 					<verbose>true</verbose>
-					<source>1.5</source>
-					<target>1.5</target>
+					<source>${java.version}</source>
+					<target>${java.version}</target>
 					<showWarnings>true</showWarnings>
 				</configuration>
 			</plugin>
